@@ -1,7 +1,7 @@
 <script>
     import "../app.css";
+    import CollectReward from './components/Reward.svelte';
 
-    /* const bgImage = './src/public/assets/images/bg-main.jpg'; */
     const bgImage = './src/public/assets/images/bg-valentine.jpg';
     const imageWelcome  = './src/public/assets/images/welcome2.png';
     const imageEnvelope  = './src/public/assets/images/envelope.png';
@@ -10,28 +10,24 @@
 
 <div class="object-cover h-dvh" style="background-image: url({bgImage})">
     <div class="flex flex-col items-center justify-center h-full">
+
         <!-- Content -->
-        <div class="absolute text-center xl:mt-20 lg:mt-20 md:mt-20 mt-10">
+        <div class="absolute text-center xl:mt-20 lg:mt-20 md:mt-20 mt-12">
             <p class="happy-text">Happy</p>
             <p class="valentine-text">Valentine's</p>
             <p class="valentine-text">Day</p>
 
-            <div class="xl:mt-16 lg:mt-16 md:mt-16 mt-6">
-            <a href="https://google.com" class="btn-adventure">
-                make a wish!
-            </a>
+            <div class="xl:mt-16 lg:mt-16 md:mt-16 mt-4">
+                <CollectReward />
+            </div>
         </div>
-        </div>
-        
+
         <!-- Image -->
         <img class="xl:w-1/2 lg:w-2/3 sm:w-10/12 p-1" src={imageWelcome} alt="Welcome"/>
     </div>
 
+    <!-- Assets -->
     <img src="{imageCloud}" class="2xl:hidden xl:hidden lg:hidden md:hidden absolute top-0 left-0 w-1/4 ml-8 mt-28" alt="Cloud"/>
     <img src="{imageEnvelope}" class="2xl:hidden xl:hidden lg:hidden md:hidden absolute bottom-0 right-0 w-1/5" alt="Envelope"/>
     <img src="{imageEnvelope}" class="2xl:hidden xl:hidden lg:hidden md:hidden absolute top-0 right-0 rotate-45 w-1/6 mr-4 mt-40" alt="Envelope"/>
-</div>   
-
-<style>
-
-</style>
+</div>
