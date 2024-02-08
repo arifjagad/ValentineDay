@@ -5,10 +5,10 @@
 
 /* Custom CSS */
 .happy-text{
-    @apply text-pink-600 font-light italic xl:text-6xl lg:text-6xl md:text-5xl text-4xl;
+    @apply text-pink-600 font-light italic xl:text-6xl lg:text-6xl md:text-5xl text-3xl;
 }
 .valentine-text{
-    @apply text-pink-600 font-semibold italic xl:text-7xl lg:text-7xl md:text-6xl text-5xl;
+    @apply text-pink-600 font-semibold italic xl:text-7xl lg:text-7xl md:text-6xl text-4xl;
 }
 .btn-adventure{
     @apply bg-pink-500 hover:bg-pink-700 text-white italic py-2 px-4 rounded-full xl:text-lg lg:text-lg text-base;}

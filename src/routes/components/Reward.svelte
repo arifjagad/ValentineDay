@@ -51,7 +51,7 @@
         {:else if isRejectDate1}
             <img src="{imgRejectCat1}" alt="Rizz Cat" class="w-full rounded mx-auto mb-5" />
             <h3 class="mb-5 text-lg text-pink-600 font-bold">Rejecting my offer, huh? Seriously?</h3>
-            <Button on:click={handleAcceptDate} color="green" class="me-2">Nah, just kidding, let's do it!</Button>
+            <Button on:click={handleAcceptDate} color="green" class="me-2">Just kidding, let's do it!</Button>
             <Button on:click={handleRejectDate2} color="yellow">Yeah, I'm serious</Button>
 
             <audio controls volume="0.25" autoplay loop hidden>
