@@ -2,15 +2,15 @@
     import { Button, Modal } from 'flowbite-svelte';
 
     // Image
-    const imgRizzCat = './src/public/assets/images/rizz-cat.jpg'
-    const imgRejectCat1 = './src/public/assets/images/reject-cat-1.jpg'
-    const imgRejectCat2 = './src/public/assets/images/reject-cat-2.png'
-    const imgHappyCat = './src/public/assets/images/happy-cat-dance.gif'
+    const imgRizzCat = './src/assets/images/rizz-cat.jpg'
+    const imgRejectCat1 = './src/assets/images/reject-cat-1.jpg'
+    const imgRejectCat2 = './src/assets/images/reject-cat-2.png'
+    const imgHappyCat = './src/assets/images/happy-cat-dance.gif'
 
     // Audio
-    const audioRizzCat = './src/public/assets/audio/rizz-song.mp3';
-    const audioHappyCat = './src/public/assets/audio/happy-cat.mp3';
-    const audioRejectCat1 = './src/public/assets/audio/wha-wha-cat-song.mp3';
+    const audioRizzCat = './src/assets/audio/rizz-song.mp3';
+    const audioHappyCat = './src/assets/audio/happy-cat.mp3';
+    const audioRejectCat1 = './src/assets/audio/wha-wha-cat-song.mp3';
 
     let popupModal = false;
 
