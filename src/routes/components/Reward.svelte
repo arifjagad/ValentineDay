@@ -2,15 +2,15 @@
     import { Button, Modal } from 'flowbite-svelte';
 
     // Image
-    const imgRizzCat = './images/rizz-cat.jpg'
-    const imgRejectCat1 = './images/reject-cat-1.jpg'
-    const imgRejectCat2 = './images/reject-cat-2.png'
-    const imgHappyCat = './images/happy-cat-dance.gif'
+    const imgRizzCat = './assets/images/rizz-cat.jpg'
+    const imgRejectCat1 = './assets/images/reject-cat-1.jpg'
+    const imgRejectCat2 = './assets/images/reject-cat-2.png'
+    const imgHappyCat = './assets/images/happy-cat-dance.gif'
 
     // Audio
-    const audioRizzCat = './audio/rizz-song.mp3';
-    const audioHappyCat = './audio/happy-cat.mp3';
-    const audioRejectCat1 = './audio/wha-wha-cat-song.mp3';
+    const audioRizzCat = './assets/audio/rizz-song.mp3';
+    const audioHappyCat = './assets/audio/happy-cat.mp3';
+    const audioRejectCat1 = './assets/audio/wha-wha-cat-song.mp3';
 
     let popupModal = false;
 
@@ -41,7 +41,7 @@
 <Modal bind:open={popupModal} size="xs" on:close={handleModalClose}>
     <div class="content text-center">
         {#if isAcceptDate}
-            <img src="{imgHappyCat}" alt="Rizz Cat" class="w-full rounded mx-auto mb-5" />
+            <img src="{imgHappyCat}" alt="Rizz Cat" class="w-full rounded mx-auto mb-5" loading="lazy"/>
             <h3 class="mb-5 text-3xl text-pink-600 font-bold">LESGOOOO!!!!!</h3>            
 
             <audio controls volume="0.25" autoplay loop hidden>
@@ -49,7 +49,7 @@
                 Your browser does not support the audio element.
             </audio>
         {:else if isRejectDate1}
-            <img src="{imgRejectCat1}" alt="Rizz Cat" class="w-full rounded mx-auto mb-5" />
+            <img src="{imgRejectCat1}" alt="Rizz Cat" class="w-full rounded mx-auto mb-5" loading="lazy"/>
             <h3 class="mb-5 text-lg text-pink-600 font-bold">Rejecting my offer, huh? Seriously?</h3>
             <Button on:click={handleAcceptDate} color="green" class="me-2">Just kidding, let's go!</Button>
             <Button on:click={handleRejectDate2} color="yellow">I'm serious</Button>
@@ -59,7 +59,7 @@
                 Your browser does not support the audio element.
             </audio>
         {:else if isRejectDate2}
-            <img src="{imgRejectCat2}" alt="Rizz Cat" class="w-full rounded mx-auto mb-5" />
+            <img src="{imgRejectCat2}" alt="Rizz Cat" class="w-full rounded mx-auto mb-5" loading="lazy"/>
             <h3 class="mb-5 text-lg text-pink-600 font-bold">I know you're feeling a bit shy about agreeing, but let's go for it!</h3>
 
             <audio controls volume="0.25" autoplay loop hidden>
@@ -67,7 +67,7 @@
                 Your browser does not support the audio element.
             </audio>
         {:else}
-            <img src="{imgRizzCat}" alt="Reject Cat 1" class="w-full rounded mx-auto mb-5" />
+            <img src="{imgRizzCat}" alt="Reject Cat 1" class="w-full rounded mx-auto mb-5" loading="lazy"/>
             <h3 class="mb-5 text-lg text-pink-600 font-bold">Let's spend the whole day together!</h3>
             <Button on:click={handleAcceptDate} color="green" class="me-2">Sure, let's do it!</Button>
             <Button on:click={handleRejectDate1} color="yellow">Nah, not really</Button>

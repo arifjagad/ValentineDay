@@ -2,11 +2,15 @@
     import "../app.css";
     import CollectReward from './components/Reward.svelte';
 
-    const bgImage = './images/bg-valentine.jpg';
-    const imageWelcome  = './images/welcome2.png';
-    const imageEnvelope  = './images/envelope.png';
-    const imageCloud  = './images/single-cloud.png';
+    const bgImage = './assets/images/bg-valentine.jpg';
+    const imageWelcome  = './assets/images/welcome2.png';
+    const imageEnvelope  = './assets/images/envelope.png';
+    const imageCloud  = './assets/images/single-cloud.png';
 </script>
+
+<svelte:head>
+    <title>Happy Valentine's Day!</title>
+</svelte:head>
 
 <div class="object-cover h-dvh" style="background-image: url({bgImage})">
     <div class="flex flex-col items-center justify-center h-full">
