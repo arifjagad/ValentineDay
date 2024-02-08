@@ -2,10 +2,10 @@
     import "../app.css";
     import CollectReward from './components/Reward.svelte';
 
-    const bgImage = './src/public/assets/images/bg-valentine.jpg';
-    const imageWelcome  = './src/public/assets/images/welcome2.png';
-    const imageEnvelope  = './src/public/assets/images/envelope.png';
-    const imageCloud  = './src/public/assets/images/single-cloud.png';
+    const bgImage = './src/assets/images/bg-valentine.jpg';
+    const imageWelcome  = './src/assets/images/welcome2.png';
+    const imageEnvelope  = './src/assets/images/envelope.png';
+    const imageCloud  = './src/assets/images/single-cloud.png';
 </script>
 
 <div class="object-cover h-dvh" style="background-image: url({bgImage})">
